@@ -24,7 +24,7 @@ function Import-ADFSWebTheme {
         [Parameter()][String]$Path,
         [switch]$Activate
     )
-    #Tests
+    #Script prerequisites
     if (!(Get-Module -ListAvailable ADFS)){
         Write-Host Import-ADFSWebTheme: ADFS module not found on this machine`, Aborting.. 
         break    
